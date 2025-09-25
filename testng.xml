@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FlipkartSuite" parallel="tests" thread-count="3">
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.FlipkartE2ETest"/>
+        </classes>
+    </test>
+
+    <test name="ChromeTests_2">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.FlipkartE2ETest"/>
+        </classes>
+    </test>
+
+    <test name="ChromeTests_1">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.FlipkartE2ETest"/>
+        </classes>
+    </test>
+</suite>
